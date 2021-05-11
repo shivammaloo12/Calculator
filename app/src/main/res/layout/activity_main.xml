@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/textNum"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="105dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
@@ -28,7 +28,7 @@
 
     <TextView
         android:id="@+id/textRes"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="105dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="10dp"
@@ -43,11 +43,27 @@
 
 
     <Button
-        android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        android:id="@+id/button3"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/black"
+        android:text="3"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBackSpace"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonDivide"
+        app:layout_constraintTop_toBottomOf="@+id/textRes" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/black"
         android:text="5"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -58,12 +74,12 @@
 
     <Button
         android:id="@+id/buttonClear"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:background="#563DFF"
         android:text="C"
         android:textColor="#ffffff"
@@ -74,10 +90,11 @@
 
     <Button
         android:id="@+id/buttonDivide"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/black"
         android:text="/"
         android:textColor="#563DFF"
         android:textSize="25sp"
@@ -87,10 +104,11 @@
 
     <Button
         android:id="@+id/buttonMultiply"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/black"
         android:text="*"
         android:textColor="#563DFF"
         android:textSize="25sp"
@@ -100,10 +118,10 @@
 
     <Button
         android:id="@+id/buttonBackSpace"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/backspace_foreground"
@@ -115,12 +133,13 @@
 
     <Button
         android:id="@+id/button7"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="132dp"
+        android:background="@android:color/black"
         android:text="7"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -131,10 +150,11 @@
 
     <Button
         android:id="@+id/button8"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="132dp"
+        android:background="@android:color/black"
         android:text="8"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -145,10 +165,11 @@
 
     <Button
         android:id="@+id/button9"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="132dp"
+        android:background="@android:color/black"
         android:text="9"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -159,12 +180,13 @@
 
     <Button
         android:id="@+id/buttonSub"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:color/black"
         android:text="-"
         android:textColor="#563DFF"
         android:textSize="25sp"
@@ -175,12 +197,13 @@
 
     <Button
         android:id="@+id/buttonAdd"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:color/black"
         android:text="+"
         android:textColor="#563DFF"
         android:textSize="25sp"
@@ -191,10 +214,11 @@
 
     <Button
         android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/black"
         android:text="6"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -205,12 +229,13 @@
 
     <Button
         android:id="@+id/button1"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/black"
         android:text="1"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -221,10 +246,11 @@
 
     <Button
         android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/black"
         android:text="2"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -234,42 +260,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textRes" />
 
     <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="328dp"
-        android:text="3"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonBackSpace"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonDivide"
-        app:layout_constraintTop_toBottomOf="@+id/textRes" />
-
-    <Button
-        android:id="@+id/buttonequal"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="#563DFF"
-        android:text="="
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonMultiply"
-        app:layout_constraintTop_toBottomOf="@+id/textRes" />
-
-    <Button
         android:id="@+id/buttonpercent"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="336dp"
+        android:background="@android:color/black"
         android:text="%"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -280,10 +276,11 @@
 
     <Button
         android:id="@+id/button0"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="336dp"
+        android:background="@android:color/black"
         android:text="0"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -294,12 +291,13 @@
 
     <Button
         android:id="@+id/buttondot"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="336dp"
+        android:background="@android:color/black"
         android:text="."
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -310,18 +308,36 @@
 
     <Button
         android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="100dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/black"
         android:text="4"
         android:textColor="#ffffff"
         android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonDivide"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRes" />
+
+    <Button
+        android:id="@+id/buttonequal"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#563DFF"
+        android:text="="
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonMultiply"
         app:layout_constraintTop_toBottomOf="@+id/textRes" />
 
 
