@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import net.objecthunter.exp4j.ExpressionBuilder
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
 
 
 
@@ -40,6 +42,9 @@ class MainActivity : AppCompatActivity() {
     fun funMultiply(view: View) { textNum.append("*") }
     fun funPercent(view: View) { textNum.append("%") }
     fun funEquals(view: View) {
-        
+        val text = textNum.text.toString() //to string
+        val eval = ExpressionBuilder(text).build()
+        val res =eval.evaluate()
+        textRes.text = res.toString()
     }
 }
