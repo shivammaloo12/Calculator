@@ -18,29 +18,35 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    fun fun0(view: View) { textNum.append("0") }
-    fun fun1(view: View) { textNum.append("1") }
-    fun fun2(view: View) { textNum.append("2") }
-    fun fun3(view: View) { textNum.append("3") }
-    fun fun4(view: View) { textNum.append("4") }
-    fun fun5(view: View) { textNum.append("5") }
-    fun fun6(view: View) { textNum.append("6") }
-    fun fun7(view: View) { textNum.append("7") }
-    fun fun8(view: View) { textNum.append("8") }
-    fun fun9(view: View) { textNum.append("9") }
-    fun funDot(view: View) { textNum.append(".") }
+    fun fun0(view: View) { textNum.text=textNum.text.toString()+"0" }
+    fun fun1(view: View) { textNum.text=textNum.text.toString()+"1" }
+    fun fun2(view: View) { textNum.text=textNum.text.toString()+"2" }
+    fun fun3(view: View) { textNum.text=textNum.text.toString()+"3" }
+    fun fun4(view: View) { textNum.text=textNum.text.toString()+"4" }
+    fun fun5(view: View) { textNum.text=textNum.text.toString()+"5" }
+    fun fun6(view: View) { textNum.text=textNum.text.toString()+"6" }
+    fun fun7(view: View) { textNum.text=textNum.text.toString()+"7" }
+    fun fun8(view: View) { textNum.text=textNum.text.toString()+"8" }
+    fun fun9(view: View) { textNum.text=textNum.text.toString()+"9" }
+    fun funDot(view: View) { textNum.text=textNum.text.toString()+"." }
 
     fun funClear(view: View) {
         textNum.text=""
         textRes.text=""
     }
-    fun funBackSpace(view: View) { textNum.toString().substring(0,textNum.toString().length-1) }
+    fun funBackSpace(view: View) {
+        val text = textNum.text.toString()
+        if(text.isNotEmpty()) {
+            textNum.text = text.substring(0,text.length-1)
+        }
 
-    fun funSub(view: View) { textNum.append("-") }
-    fun funAdd(view: View) { textNum.append("+") }
-    fun funDivide(view: View) { textNum.append("/") }
-    fun funMultiply(view: View) { textNum.append("*") }
-    fun funPercent(view: View) { textNum.append("%") }
+    }
+
+    fun funSub(view: View) { textNum.text=textNum.text.toString()+"-" }
+    fun funAdd(view: View) { textNum.text=textNum.text.toString()+"+" }
+    fun funDivide(view: View) { textNum.text=textNum.text.toString()+"/" }
+    fun funMultiply(view: View) { textNum.text=textNum.text.toString()+"*" }
+    fun funPercent(view: View) { textNum.text=textNum.text.toString()+"%" }
     fun funEquals(view: View) {
         val text = textNum.text.toString() //to string
         val eval = ExpressionBuilder(text).build()
